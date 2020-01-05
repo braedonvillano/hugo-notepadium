@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
 <section id="header" class="site header max-body-width">
     <div class="header wrap"><span class="header left-side"><a class="site home" href="{{- `/` | relURL -}}">
                 {{- $logo := site.Params.logo -}}
@@ -9,6 +10,16 @@
             {{- partial "navigation-items.html" site.Params.nav -}}
         </span></div>
     {{- with site.Params.slogan -}}
-        <div class="site slogan"><span class="title">{{- . | safeHTML -}}</span></div>
+        <div class="site slogan"><span class="title">
+        <a style="padding-right: 3px; padding-left: 3px;" href="https://github.com/braedonvillano" aria-label="Github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        <a style="padding-right: 3px; padding-left: 3px;" href="https://instagram.com/braedont_ask" aria-label="Instagram" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a style="padding-right: 3px; padding-left: 3px;" href="mailto:braedon.villano@gmail.com" aria-label="Email"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+        <a style="padding-right: 3px; padding-left: 3px;" href="https://www.linkedin.com/in/braedon-villano-16872413a/" aria-label="LinkedIn" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        </span></div>
     {{- end -}}
 </section>
+
+
+<!-- <a href="https://twitter.com/braedonvillano" aria-label="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+<a href="https://github.com/braedonvillano" aria-label="Github" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+<a href="https://instagram.com/braedont_ask" aria-label="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a> -->
